@@ -12,4 +12,237 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page-container {
+    display: grid;
+    height: 100vh;
+    width: auto;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar material";
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+/* ==================================================
+   SIDEBAR SECTION
+================================================== */
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 40px;
+    background-color: #306BAC;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.nav-1 ul, .nav-2 ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.nav-1 li, .nav-2 li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ==================================================
+   HEADER SECTION
+================================================== */
+.header {
+    padding: 40px;
+}
+
+.top-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    width: 800px;
+    border: none;
+    background-color: #ECECEC;
+    border-radius: 12px;
+    padding: 8px;
+    margin-left: 15px;
+}
+
+.search-wrap  {
+    display: flex;
+    align-items: center;
+}
+
+.head-user-wrap {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.noti {
+    margin: 0 40px;
+}
+
+.bot-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.greeting-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.greeting-wrap img {
+    height: 60px;
+    width: 60px;
+}
+
+.bot-wrap .user-name {
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.buttons-wrap {
+    display: flex;
+}
+
+.buttons-wrap button {
+    background-color: #306BAC;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    width: 100px;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+/* ==================================================
+   MAIN CONTENT SECTION
+================================================== */
+.main-content {
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.6) inset;
+    background-color: #ECECEC;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.projects-section {
+    max-height: 40vh;
+}
+
+.card-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    min-height: 166px;
+    border-radius: 10px;
+    border-left: 10px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card p {
+    margin: 20px 0;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: right;
+    align-items: space-between;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icon {
+    margin: 0 10px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.info-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.info-card p {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-card h4 {
+    margin: 5px 0;
+}
+
+.announcements {
+    margin-bottom: 20px;
+}
+
+.info-card .last {
+    border-bottom: none;
+}
+
+.trend-user-wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.trend-user-wrap h4 {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.trend-user-wrap img {
+    height: 40px;
+    width: 40px;
+}
+
+.trend-user-wrap .last {
+    border-bottom: none;
+}
+
+.trend-user-info {
+    width: 100%;
+}
+
+.trend-user-info p {
+    padding-bottom: 16px;
 }
